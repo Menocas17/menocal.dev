@@ -1,0 +1,37 @@
+{
+  "navbar": [
+    { "label": "Education", "href": "/#education" },
+    { "label": "Proyects", "href": "/#proyects" },
+    { "label": "About me", "href": "/#aboutMe" },
+    { "label": "Get in touch", "href": "mailto:rodolfomenocal17@gmail.com" }
+  ],
+  "hero": {
+    "profileImage": "/photo1.jpeg",
+    "name": "Rodolfo Menocal",
+    "status": {
+      "text": "Open to Work",
+      "href": "https://www.linkedin.com/in/menocas/"
+    },
+
+    "ActionButtons": [
+      {
+        "text": "Get in Touch",
+        "href": "mailto:rodolfomenocal17@gmail.com",
+        "icon": "mail",
+        "outLink": false
+      },
+      {
+        "text": "Download CV",
+        "href": "/cv-rodolfo.pdf",
+        "icon": "file",
+        "outLink": false
+      },
+      {
+        "text": "Linkedin",
+        "href": "https://www.linkedin.com/in/menocas",
+        "icon": "linkedin",
+        "outLink": true
+      }
+    ]
+  }
+}
