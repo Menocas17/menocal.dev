@@ -1,7 +1,9 @@
-export default function MailIcon() {
+import type { SVGProps } from 'react';
+
+export default function MailIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      className='size-4'
+      {...props}
       xmlns='http://www.w3.org/2000/svg'
       width='24'
       height='24'

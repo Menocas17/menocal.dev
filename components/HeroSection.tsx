@@ -10,15 +10,18 @@ import LinkedinIcon from '@/components/icons/LinkedinIcon';
 import data from '@/data/portfolio.json';
 
 const iconMap: Record<string, React.ReactNode> = {
-  mail: <MailIcon />,
-  file: <FileIcon />,
-  linkedin: <LinkedinIcon />,
+  mail: <MailIcon className='size-4' />,
+  file: <FileIcon className='size-4' />,
+  linkedin: <LinkedinIcon className='size-4' />,
 };
 
 export default function Hero() {
   return (
-    <section className='flex items-center justify-around' id='hero'>
-      <div className='max-w-[45%]'>
+    <section
+      className='flex flex-col lg:flex-row items-center justify-between 2xl:max-w-4/5 m-auto'
+      id='hero'
+    >
+      <div className=' max-w-[90%] lg:max-w-[45%]'>
         <div className='flex items-center gap-6'>
           <Image
             src={data.hero.profileImage}
@@ -43,7 +46,7 @@ export default function Hero() {
           <strong>React & Next.js</strong> with Backend proficiency. Based in
           Nicaragua 🇳🇮.
         </p>
-        <nav className='mt-6 flex gap-6'>
+        <nav className='mt-6 flex flex-wrap gap-6'>
           {data.hero.ActionButtons.map((btn, index) => (
             <Button
               key={index}

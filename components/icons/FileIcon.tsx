@@ -1,6 +1,8 @@
-export default function FileIcon() {
+import type { SVGProps } from 'react';
+export default function FileIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
+      {...props}
       xmlns='http://www.w3.org/2000/svg'
       fill='none'
       viewBox='0 0 24 24'
