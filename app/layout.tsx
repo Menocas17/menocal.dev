@@ -1,16 +1,11 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Onest } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/ThemeProvider';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const onest = Onest({
   subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  variable: '--font-onest',
 });
 
 export const metadata: Metadata = {
@@ -25,17 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${onest.variable} font-sans antialiased`}>
         <ThemeProvider
           attribute='class'
           defaultTheme='dark'
           enableSystem={false}
         >
-          <div className='absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(90,131,99,0.3),rgba(255,255,255,0))]'>
-            {children}
-          </div>
+          <div className='fixed inset-0 z-[-2] h-full w-full bg-gray-50 dark:bg-gray-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(90,131,99,0.3),rgba(255,255,255,0))]' />
+
+          {children}
         </ThemeProvider>
       </body>
     </html>

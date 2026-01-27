@@ -1,7 +1,7 @@
 {
   "navbar": [
-    { "label": "Education", "href": "/#education" },
-    { "label": "Proyects", "href": "/#proyects" },
+    { "label": "Proyects", "href": "/#education" },
+    { "label": "Education", "href": "/#proyects" },
     { "label": "About me", "href": "/#aboutMe" },
     { "label": "Get in touch", "href": "mailto:rodolfomenocal17@gmail.com" }
   ],
@@ -33,5 +33,30 @@
         "outLink": true
       }
     ]
-  }
+  },
+  "proyects": [
+    {
+      "id": "fitshare-27-01-26",
+      "name": " FitShare-Life App",
+      "extendedName": "An app to manage your workouts perfect",
+      "technologies": [
+        { "name": "NextJS", "icon": "next" },
+        { "name": "Tailwind CSS", "icon": "tailwind" },
+        { "name": "Supabase", "icon": "supabase" }
+      ],
+      "description": "A Full Stack social fitness platform designed to track workouts, visualize progress metrics (PRs), and connect with friends for competition. Built with secure authentication and a real-time database using Supabase, wrapped in a modern UI with Next.js and Tailwind CSS",
+      "image": "/fitshareLife.png"
+    }
+  ],
+  "education": [
+    {
+      "id": "BS-Software-BYU",
+      "title": "Bachelor of Science in Software Development",
+      "institution": "Brigham Young University - Idaho",
+      "time": "Jun 2021 - Dec 2025",
+      "description": "Earned a Bachelor of Science in Software Development from BYU-Idaho. This comprehensive program provided a strong foundation in software engineering principles, data structures, and the lifecycle of building scalable applications.",
+      "type": "degree",
+      "link": "https://www.michaelsutter.com/ediploma?fn=diplomastatuscheck&key=020000001bc61917efe25750a0caa2d8c9d620da13aa0d1a69f8e4c73b2a429bc08681cdaa9938795506de284ab2379294930529e746dee53245a6bfed9af9f3d1b9e464"
+    }
+  ]
 }
