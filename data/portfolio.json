@@ -38,7 +38,7 @@
       }
     ]
   },
-  "proyects": [
+  "projects": [
     {
       "id": "fitshare-27-01-26",
       "name": " FitShare-Life App",
@@ -49,7 +49,9 @@
         { "name": "Supabase", "icon": "supabase" }
       ],
       "description": "A Full Stack social fitness platform designed to track workouts, visualize progress metrics (PRs), and connect with friends for competition. Built with secure authentication and a real-time database using Supabase, wrapped in a modern UI with Next.js and Tailwind CSS",
-      "image": "/fitshareLife.png"
+      "image": "/fitshareLife.png",
+      "link": "https://fit-share-life-two.vercel.app/",
+      "githubLink": "https://github.com/Menocas17/FitShare-Life"
     }
   ],
   "education": [

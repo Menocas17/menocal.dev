@@ -1,4 +1,4 @@
-export default function ProyectIcon() {
+export default function ProjectIcon() {
   return (
     <svg
       className='size-7'
