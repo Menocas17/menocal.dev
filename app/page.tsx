@@ -2,7 +2,7 @@
 // import ThemeSelector from '@/components/ThemeSelector';
 // import Link from 'next/link';
 import Hero from '@/components/HeroSection';
-import Proyects from '@/components/ProyectsSection';
+import Projects from '@/components/ProjectsSection';
 import Education from '@/components/EducationSection';
 import About from '@/components/AboutSection';
 import Footer from '@/components/Footer';
@@ -16,7 +16,7 @@ export default function Home() {
       <div className='max-w-[90%] md:max-w-4/5 m-auto'>
         <main>
           <Hero />
-          <Proyects />
+          <Projects />
           <Education />
           <About />
         </main>
