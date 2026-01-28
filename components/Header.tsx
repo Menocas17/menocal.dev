@@ -8,15 +8,18 @@ export default function Header() {
     useActiveSection();
 
   return (
-    <header className='m-auto sticky top-4 z-50 '>
+    <header className='m-auto sticky top-4 z-50 mb-15'>
       <nav className='flex justify-center items-center min-[380px]:w-max gap-4 sm:gap-8 md:gap-15 m-auto rounded-2xl mt-6 md:mt-8  mb-6 md:mb-10 lg:mb-0 px-5 py-3 backdrop-blur-md bg-white/70 dark:bg-black/40 border border-white/20 shadow-lg'>
         <ul className='flex flex-wrap min-[380]:flex justify-center items-center gap-4 md:gap-8'>
           {data.navbar.map((item, index) => {
             const isActive = activeSection === item.id;
+            const isScrollLink = item.href.startsWith('#');
 
             const handleScroll = (
               e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
             ) => {
+              if (!isScrollLink) return;
+
               e.preventDefault();
 
               const elem = document.getElementById(item.id);

@@ -11,18 +11,18 @@ import Header from '@/components/Header';
 
 export default function Home() {
   return (
-    <div className='max-w-[90%] md:max-w-4/5 m-auto'>
-      <ScrollProvider>
-        <Header />
+    <ScrollProvider>
+      <Header />
+      <div className='max-w-[90%] md:max-w-4/5 m-auto'>
         <main>
           <Hero />
           <Proyects />
           <Education />
           <About />
         </main>
-      </ScrollProvider>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </ScrollProvider>
   );
 }
