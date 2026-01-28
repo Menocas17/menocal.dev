@@ -20,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning className='scroll-smooth'>
-      <body className={`${onest.variable} font-sans antialiased`}>
+      <body
+        className={`${onest.variable} font-sans antialiased overflow-x-hidden bg-gray-50 text-gray-900       
+          dark:bg-gray-950 dark:text-gray-50`}
+      >
         <ThemeProvider
           attribute='class'
           defaultTheme='dark'
