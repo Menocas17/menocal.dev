@@ -1,9 +1,12 @@
+'use client';
 import Image from 'next/image';
 import AboutIcon from './icons/AboutIcon';
+import { useSectionInView } from '@/Context/sectionActiveContex';
 
 export default function About() {
+  const ref = useSectionInView('about');
   return (
-    <section>
+    <section id='about' ref={ref} className='mb-20 scroll-mt-25'>
       <h2 className='flex items-center justify-center mb-18 text-4xl font-semibold gap-x-3 text-black/80 dark:text-white undefined'>
         <AboutIcon />
         About me

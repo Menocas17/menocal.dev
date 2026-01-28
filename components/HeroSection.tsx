@@ -1,3 +1,5 @@
+'use client';
+import { useSectionInView } from '@/Context/sectionActiveContex';
 import Button from '@/components/Button';
 import SpecialButton from '@/components/EspecialButton';
 import ProgrammingAnimation from '@/components/ProgramingAnimation';
@@ -16,10 +18,12 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 export default function Hero() {
+  const ref = useSectionInView('hero');
   return (
     <section
       className='flex flex-col lg:flex-row items-center justify-between 2xl:max-w-4/5 m-auto'
       id='hero'
+      ref={ref}
     >
       <div className=' max-w-[90%] lg:max-w-[45%]'>
         <div className='flex items-center gap-6'>

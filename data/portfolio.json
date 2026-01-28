@@ -1,9 +1,13 @@
 {
   "navbar": [
-    { "label": "Proyects", "href": "/#education" },
-    { "label": "Education", "href": "/#proyects" },
-    { "label": "About me", "href": "/#aboutMe" },
-    { "label": "Get in touch", "href": "mailto:rodolfomenocal17@gmail.com" }
+    { "label": "Projects", "href": "#projects", "id": "projects" },
+    { "label": "Education", "href": "#education", "id": "education" },
+    { "label": "About me", "href": "#about", "id": "about" },
+    {
+      "label": "Get in touch",
+      "href": "mailto:rodolfomenocal17@gmail.com",
+      "id": "contact"
+    }
   ],
   "hero": {
     "profileImage": "/photo1.jpeg",
