@@ -1,3 +1,5 @@
+'use client';
+import { useSectionInView } from '@/Context/sectionActiveContex';
 import ProyectIcon from '@/components/icons/ProyectsIcon';
 import { NextIcon } from '@/components/icons/NextIcon';
 import Image from 'next/image';
@@ -21,14 +23,19 @@ const iconStyles: Record<string, string> = {
 };
 
 export default function Proyects() {
+  const ref = useSectionInView('projects');
   return (
-    <section className='relative w-full overflow-hidden  py-10' id='proyects'>
+    <section
+      className='relative w-full overflow-hidden  py-10 mb-20 scroll-mt-25'
+      ref={ref}
+      id='projects'
+    >
       <ParticlesBackground />
 
       <div className='max-w-[90%] m-auto relative z-10'>
         <h2 className='flex items-center justify-center mb-18 text-4xl font-semibold gap-x-3 text-black/80 dark:text-white undefined'>
           <ProyectIcon />
-          Proyects
+          Projects
         </h2>
         <div className='flex flex-col gap-y-16'>
           {data.proyects.map((proyect) => (

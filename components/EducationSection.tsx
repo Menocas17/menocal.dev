@@ -1,10 +1,14 @@
+'use client';
+
 import ChevronRightIcon from './icons/ChevronIcon';
 import data from '@/data/portfolio.json';
 import EducationIcon from './icons/EducationIcon';
+import { useSectionInView } from '@/Context/sectionActiveContex';
 
 export default function Education() {
+  const ref = useSectionInView('education');
   return (
-    <section id='education' className='pl-8 mt-10 mb-10'>
+    <section id='education' ref={ref} className='pl-8 mt-10 mb-20 scroll-mt-25'>
       <h2 className='flex items-center justify-center mb-18 text-4xl font-semibold gap-x-3 text-black/80 dark:text-white undefined'>
         <EducationIcon />
         Education
