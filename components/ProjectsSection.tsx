@@ -67,7 +67,7 @@ export default function Projects() {
                   {project.name} - {project.extendedName}
                 </h3>
                 <div className='flex flex-wrap mt-2'>
-                  <ul className='flex flex-row mb-2 gap-x-2'>
+                  <ul className='flex flex-wrap mb-2 gap-2'>
                     {project.technologies.map((tech) => (
                       <li key={tech.name}>
                         <span
