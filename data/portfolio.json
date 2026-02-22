@@ -42,7 +42,7 @@
     {
       "id": "fitshare-27-01-26",
       "name": "FitShare-Life App",
-      "extendedName": "An app to manage your workouts perfect",
+      "extendedName": "An app to manage your workouts like a pro",
       "technologies": [
         { "name": "NextJS", "icon": "next" },
         { "name": "Tailwind CSS", "icon": "tailwind" },
