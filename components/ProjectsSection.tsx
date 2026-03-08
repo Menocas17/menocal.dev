@@ -9,17 +9,25 @@ import GitHubIcon from '@/components/icons/GithubIcon';
 import LinkIcon from '@/components/icons/LinkIcon';
 import ParticlesBackground from './Particles';
 import data from '@/data/portfolio.json';
+import { PrismaIcon } from './icons/PrismaIcon';
+import { NestIcon } from './icons/NestIcon';
+import { ReactIcon } from './icons/ReactIcon';
 
 const iconMap: Record<string, React.ReactNode> = {
   next: <NextIcon className='size-4' />,
   tailwind: <TailwindIcon className='size-4' />,
   supabase: <SupabaseIcon className='size-4' />,
+  prisma: <PrismaIcon className='size-4' />,
+  nest: <NestIcon className='size-4' />,
+  react: <ReactIcon className='size-4' />,
 };
 
 const iconStyles: Record<string, string> = {
   next: 'bg-black border-gray-400',
   tailwind: 'bg-[#003159] border-blue-300',
   supabase: 'bg-black border-green-400',
+  react: 'border-[#58C4DC]',
+  nest: 'border-[#EA2859]',
 };
 
 export default function Projects() {
@@ -59,7 +67,7 @@ export default function Projects() {
                   {project.name} - {project.extendedName}
                 </h3>
                 <div className='flex flex-wrap mt-2'>
-                  <ul className='flex flex-row mb-2 gap-x-2'>
+                  <ul className='flex flex-wrap mb-2 gap-2'>
                     {project.technologies.map((tech) => (
                       <li key={tech.name}>
                         <span
