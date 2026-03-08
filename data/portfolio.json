@@ -63,7 +63,7 @@
         { "name": "NestJS", "icon": "nest" },
         { "name": "Prisma", "icon": "prisma" }
       ],
-      "description": "A simple web application that allows users to create, edit, delete, archive, and filter notes. This project is implemented as a Single Page Application (SPA) with a REST API backend.",
+      "description": "A web application that allows users to create, edit, delete, archive, and filter notes. This project is implemented as a Single Page Application (SPA) with a REST API backend.",
       "image": "/notes.png",
       "link": "https://notes-app-frontend-j8kt.onrender.com",
       "githubLink": "https://github.com/Menocas17/notes-app"
