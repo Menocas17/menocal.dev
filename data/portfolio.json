@@ -54,6 +54,21 @@
       "githubLink": "https://github.com/Menocas17/FitShare-Life"
     },
     {
+      "id": "conduit-29-04-2026",
+      "name": "Conduit RealWorld Project",
+      "extendedName": "A full-featured Medium.com clone and blogging platform",
+      "technologies": [
+        { "name": "React", "icon": "react" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Redux Toolkit", "icon": "redux" },
+        { "name": "React Router", "icon": "reactrouter" }
+      ],
+      "description": "A fully functional Medium clone built to demonstrate modern frontend architecture. It features robust authentication, personalized article feeds, user profiles etc... The application leverages RTK Query for highly efficient API caching and data fetching, strict TypeScript for type safety, and React Router v7 for seamless client-side navigation.",
+      "image": "/conduit.png",
+      "link": "https://conduitrm.netlify.app/",
+      "githubLink": "https://github.com/Menocas17/react-redux-toolkit-realworldProject"
+    },
+    {
       "id": "notesApp-19-02-26",
       "name": "Notes App",
       "extendedName": "Keep all your though organized, and your ideas alive",

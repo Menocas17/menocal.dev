@@ -12,6 +12,9 @@ import data from '@/data/portfolio.json';
 import { PrismaIcon } from './icons/PrismaIcon';
 import { NestIcon } from './icons/NestIcon';
 import { ReactIcon } from './icons/ReactIcon';
+import { ReduxIcon } from './icons/ReduxIcon';
+import { ReactRouter } from './icons/ReactRouterIcon';
+import { TypeScript } from './icons/TypeScriptIcon';
 
 const iconMap: Record<string, React.ReactNode> = {
   next: <NextIcon className='size-4' />,
@@ -20,6 +23,9 @@ const iconMap: Record<string, React.ReactNode> = {
   prisma: <PrismaIcon className='size-4' />,
   nest: <NestIcon className='size-4' />,
   react: <ReactIcon className='size-4' />,
+  redux: <ReduxIcon className='size-4' />,
+  reactrouter: <ReactRouter className='size-4' />,
+  typescript: <TypeScript className='size-4' />,
 };
 
 const iconStyles: Record<string, string> = {
@@ -28,6 +34,9 @@ const iconStyles: Record<string, string> = {
   supabase: 'bg-black border-green-400',
   react: 'border-[#58C4DC]',
   nest: 'border-[#EA2859]',
+  redux: 'border-[#764ABC] ',
+  reactrouter: 'border-[#F4424F]',
+  typescript: 'border-[#3178C6]',
 };
 
 export default function Projects() {
