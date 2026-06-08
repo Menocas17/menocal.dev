@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Onest } from 'next/font/google';
-import './globals.css';
+
 import { ThemeProvider } from '@/components/ThemeProvider';
 
 const onest = Onest({
@@ -9,10 +9,25 @@ const onest = Onest({
 });
 
 export const metadata: Metadata = {
-  title: `Rodolfo Menocal - Software Developer`,
-  description: 'Personal web portfolio of Rodolfo Menocal',
+  title: 'Rodolfo Menocal - Software Developer',
+  description:
+    'Full-stack software developer specializing in building modern, high-performance web applications with React, Next.js, and Tailwind CSS. Explore my projects and technical expertise.',
+  openGraph: {
+    title: 'Rodolfo Menocal - Software Developer',
+    description:
+      'Full-stack software developer specializing in building modern, high-performance web applications.',
+    url: 'https://menocal.dev/',
+    siteName: 'Rodolfo Menocal Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Rodolfo Menocal - Software Developer',
+    description:
+      'Full-stack software developer specializing in building modern web applications.',
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
